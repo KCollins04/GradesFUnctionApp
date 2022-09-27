@@ -25,6 +25,8 @@ class ViewController: UIViewController {
     
     
     @IBAction func actionButtonPoints(_ sender: Any) {
+        var one = points(num1: Double(outletInput.text!)!, num2: Double(outletTextPoints.text!)!)
+        outletTextGrade.text = "\(one.0)  \(one.1)"
     //   let p = points(num1: Double(outletInput.text!)!, num2: Double(outletTextPoints.text!)!)
        // outletTextGrade.text = ("\(percentage(num1: Double(p)))  \(lettergrade(num1: Double(p))) Percentage: \(p)%")
     }
@@ -57,13 +59,14 @@ class ViewController: UIViewController {
         }
     }
    
-    func points(num1: Double, num2: Double)-> ( Double, String){
-        let point(Double, String, String)
-        point.0 return num1/ num2
-        point.1 return lettergrade(num1: (num1 / num2))
-        point.2 return percentage(num1: (num1 / num2))
-     
+    func points(num1: Double, num2: Double)-> ( Double, String)
+    {
+        var point: (Double, String)
+        point.0 = num1 / num2
+        point.1 = lettergrade(num1: (num1 / num2))
+     return point
     }
-    
 }
+    
+
 
