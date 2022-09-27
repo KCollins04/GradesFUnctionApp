@@ -57,10 +57,12 @@ class ViewController: UIViewController {
         }
     }
    
-    func points(num1: Double, num2: Double)-> ( Double, Double, String){
-        let point(Double, Double, String)
-        point.0 = num1/ num2
-        
+    func points(num1: Double, num2: Double)-> ( Double, String){
+        let point(Double, String, String)
+        point.0 return num1/ num2
+        point.1 return lettergrade(num1: (num1 / num2))
+        point.2 return percentage(num1: (num1 / num2))
+     
     }
     
 }
